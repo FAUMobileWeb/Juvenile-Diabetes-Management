@@ -1,4 +1,4 @@
-#Assignment 1
+#Homework 1
 Due 9/21/16 Midnight
 
 Ideally, I would like all the quizzes, homeworks and  project assignments to work towards your App. So, this HW 1 could be based on what you wish to do for your App Or you could choose one of the topics given on page 40 of the text book under the heading of "Programming Projects." If you were to work on your app for this assignment, this assignment would become the information page: the general theory/knowledge/explanation/references/links page that  provides additional information for the user, but does not clutter the user accessed pages with too much information. Look at the programming projects on page 40 to get a general idea on what kind of information you might wish to include there.
