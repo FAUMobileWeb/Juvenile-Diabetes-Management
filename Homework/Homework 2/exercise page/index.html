@@ -13,8 +13,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Custom CSS -->
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="css/4-col-portfolio.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,6 +24,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+     <!-- jQuery -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/moment.min.js"></script>
 
 </head>
 
@@ -76,15 +80,25 @@
                 </div>
             </div>
 
+             
+        
             <div class="form-group">
                 <div class="row">
-                    <label class="col-md-6" for="time">Time</label>
-                        <div id="datetimepicker1" class="input-append date">
-                            <input data-format="dd/MM/yyyy hh:mm:ss" type="text">
-                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                        </div>
+                <label class="col-md-6" for="dateTime">Date/Time</label>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
                 </div>
             </div>
+        
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
         </form>
 
         <!-- Footer -->
@@ -100,11 +114,12 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+   
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
 
 </body>
 
