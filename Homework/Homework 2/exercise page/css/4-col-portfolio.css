@@ -19,16 +19,3 @@ footer {
 #title{
     font-style: italic;
 }
-.form-group label {
-    float: left;
-    text-align: left;
-    font-weight: normal;
-}
-
-.form-group select {
-    width: auto;
-    vertical-align:top;
-}
-#weightSelec{
-
-}
