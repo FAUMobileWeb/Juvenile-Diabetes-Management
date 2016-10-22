@@ -22,4 +22,6 @@ footer {
 #mainBody
 {
     text-align: center;
+    background-color: gainsboro;
+    border-radius: 10px;
 }
