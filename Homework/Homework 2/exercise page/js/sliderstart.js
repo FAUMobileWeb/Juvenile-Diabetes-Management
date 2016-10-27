@@ -1,19 +1,19 @@
-$('#slider-1').slider({
+var slider1 = $('#slider-1').slider({
 	formatter: function(value) {
 		return 'Val:' + value;
 	}
 });
-$('#slider-2').slider({
+var slider2 = $('#slider-2').slider({
 	formatter: function(value) {
 		return 'Val: ' + value;
 	}
 });
-$('#slider-3').slider({
+var slider3 = $('#slider-3').slider({
 	formatter: function(value) {
 		return 'Val: ' + value;
 	}
 });
-$('#slider-4').slider({
+var slider4 = $('#slider-4').slider({
 	formatter: function(value) {
 		return 'Val: ' + value;
 	}

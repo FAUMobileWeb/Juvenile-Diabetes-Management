@@ -46,9 +46,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">Juvenile Diabetes Management</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Collect the nav links, forms, and other content for toggling
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
@@ -62,6 +62,7 @@
                     </li>
                 </ul>
             </div>
+             -->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -158,17 +159,34 @@
             </div>
             <div class="form-group">
                 <div class="row">
-                    <button type="button" class="btn btn-lg btn-success">Add</button>
+                    <button type="button" class="btn btn-lg btn-success" id="addButton">Add</button>
                     <button type="button" class="btn btn-lg btn-danger">Back</button>
                 </div>
             </div>
         </form>
+        
+        <div>
+            <table class="table" id="outputWeight">
+                <tr>
+                    <td>Date/Time</td>
+                    <td>Weight</td>
+                    <td>Sets</td>
+                    <td>Reps</td>
+                </tr>
+            </table>
+            <table class="table" id="outputCardio">
+                 <tr>
+                    <td>Date/Time</td>
+                    <td>Time Span</td>
+                </tr>
+            </table>
+        </div>
 
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Michael Del Campo & Markenly Alusma 2016</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -186,6 +204,7 @@
     <script src="js/bootstrap-slider.js"></script>
     <script src="js/sliderstart.js"></script>
     <script src="js/selectUpdate.js"></script>
+    <script src="js/exerciseAdd.js"></script>
 
 </body>
 
