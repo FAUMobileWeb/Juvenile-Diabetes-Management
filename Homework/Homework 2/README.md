@@ -1,4 +1,4 @@
-#Homework 1
+#Homework 2
 Due 10/28/16 Before Class
 
 This is a group project. If you work on your group project for this homework, you will be achieving two things at the same time, viz.,  make progress on the project and also complete an assignment for class purposes. If you wish to continue with the individual homework 1 assignment for this also, that is OK with me - just note you still have to do similar work for your group project. Either way, submit under your name. BB will recognize which group you are in and the grade will be good for your partner too (unless he/she submits a separate one). This refers to building mobile friendly and responsive app screens as covered in Chapter 3.
