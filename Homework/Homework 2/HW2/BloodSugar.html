@@ -70,69 +70,21 @@
 
     <!-- Page Content -->
     <div class="container" id="mainBody">
-        <h1 id="title">Exercises</h1>
+        <h1 id="title">Blood Sugar</h1>
         <form>
+           
             <div class="form-group">
                 <div class="row">
-                    <label class="col-xs-4 col-sm-4 col-md-4" for="typeEx">Type</label>
-                    <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1 col-md-4 ">
-                        <select class="form-control" id="weightSelect">
-                            <option value= "1" selected="selected">Weight Lifting</option>
-                            <option value="2">Cardio</option>
-                        </select>
-                    </div> 
-                </div>
-            </div>
-            <div class="collapse" id="sliders1">
-            <div class="form-group">
-                <div class="row">
-
-                    <label class="col-xs-4 col-sm-4 col-md-4" for="slider-1">Time Span</label>
+                    <label class="col-xs-4 col-sm-4 col-md-4" for="slider-2">Blood Sugar Level</label>
                     <div class=" col-sm-4 col-sm-offset-1 col-md-4 ">
-                        <input type="range" data-slider-id='slider-1' name="slider-1" id="slider-1" data-slider-min="0" data-slider-max="180" data-slider-value="5">
+                        <input type="range" data-slider-id='slider-2' name="slider-2" id="slider-2" data-slider-min="40" data-slider-max="250" data-slider-value="5">
                         <span class = "col-xs-offset-1">
-                        minutes
-                    </span>
-                    </div>
-
-                </div>
-            </div>
-            </div>
-            <div class="collapse" id="sliders2">
-            <div class="form-group">
-                <div class="row">
-                    <label class="col-xs-4 col-sm-4 col-md-4" for="slider-2">Weight Lifted</label>
-                    <div class=" col-sm-4 col-sm-offset-1 col-md-4 ">
-                        <input type="range" data-slider-id='slider-2' name="slider-2" id="slider-2" data-slider-min="0" data-slider-max="500" data-slider-value="5">
-                        <span class = "col-xs-offset-1">
-                        pounds
+                        mg/dL
                     </span>
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="row">
-                    <label class="col-xs-4 col-sm-4 col-md-4" for="slider-3">Sets</label>
-                    <div class=" col-sm-4 col-sm-offset-1 col-md-4 ">
-                        <input type="range" data-slider-id='slider-3' name="slider-3" id="slider-3" data-slider-min="0" data-slider-max="10" data-slider-value="5">
-                        <span class = "col-xs-offset-1">
-                        number
-                    </span>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <label class="col-xs-4 col-sm-4 col-md-4" for="slider-4">Repetions</label>
-                    <div class="col-sm-4 col-sm-offset-1 col-md-4 ">
-                        <input type="range" data-slider-id='slider-4' name="slider-4" id="slider-4" data-slider-min="0" data-slider-max="20" data-slider-value="5">
-                        <span class = "col-xs-offset-1">
-                        number
-                    </span>
-                    </div>
-                </div>
-            </div>
-            </div>
+           
 
             <div class="form-group">
                 <div class="row">
@@ -163,24 +115,6 @@
                     <button type="button" class="btn btn-lg btn-danger">Back</button>
                 </div>
             </div>
-        </form>
-        
-        <div>
-            <table class="table" id="outputWeight">
-                <tr>
-                    <td>Date/Time</td>
-                    <td>Weight</td>
-                    <td>Sets</td>
-                    <td>Reps</td>
-                </tr>
-            </table>
-            <table class="table" id="outputCardio">
-                 <tr>
-                    <td>Date/Time</td>
-                    <td>Time Span</td>
-                </tr>
-            </table>
-        </div>
 
         <!-- Footer -->
         <footer>
