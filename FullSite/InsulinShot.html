@@ -9,12 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Exercise page</title>
+    <title>Insulin Shot</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.min.css" rel="stylesheet">
     <link href="css/4-col-portfolio.css" rel="stylesheet">
 
 
@@ -27,6 +29,7 @@
     <![endif]-->
     <!-- jQuery -->
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/moment.min.js"></script>
 
 </head>
 
@@ -67,23 +70,52 @@
 
     <!-- Page Content -->
     <div class="container" id="mainBody">
-        <h1 id="title">Add Data</h1>
-            <div class="row">
-            <div class="col-md-4 col-md-offset-4 portfolio-item">
-                <div clas="list-group">
-                    <a href="" class="list-group-item">Add Meal</a>
-                    <a href="BloodSugar.html" class="list-group-item">Add Blood Sugar Measurement</a>
-                    <a href="InsulinShot.html" class="list-group-item">Add Insulin Shot</a>
-                    <a href="Exercise.html" class="list-group-item">Add Exercise</a>
-                    <a href="Weight.html" class="list-group-item">Add Weight Measurement</a>
-                    <a href="BloodPressure.html" class="list-group-item">Add Blood Pressure Measurement</a>
+        <h1 id="title">Insulin Shot</h1>
+        <form>
+           
+            <div class="form-group">
+                <div class="row">
+                    <label class="col-xs-4 col-sm-4 col-md-4" for="slider-2">Insulin Dosage</label>
+                    <div class=" col-sm-4 col-sm-offset-1 col-md-4 ">
+                        <input type="range" data-slider-id='slider-2' name="slider-2" id="slider-2" data-slider-min="0" data-slider-max="800" data-slider-value="100">
+                        <span class = "col-xs-offset-1">
+                        U/mL
+                    </span>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-    
            
 
+            <div class="form-group">
+                <div class="row">
+                    <label class="col-xs-4 col-sm-4 col-md-4" for="dateTime">Date/Time</label>
+
+                    <div class='input-group date col-xs-10 col-xs-offset-2 col-sm-4 col-sm-offset-5 col-md-4 col-md-offset-5' id='datetimepicker1'>
+                        <input type='text' class="form-control" readonly="readonly" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker();
+                        $('#datetimepicker1').data("DateTimePicker").focusOnShow(false);
+                        $('#datetimepicker1').data("DateTimePicker").ignoreReadonly(true);
+                        $('#datetimepicker1').data("DateTimePicker").showClose(true);
+                        
+                    });
+                </script>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <button type="button" class="btn btn-lg btn-success" id="addButton">Add</button>
+                    <a href="index.html" class="btn btn-lg btn-danger">Back</a>
+                </div>
+            </div>
+        </form>
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -103,7 +135,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/sliderstart.js"></script>
+    <script src="js/selectUpdate.js"></script>
+    <!--<script src="js/exerciseAdd.js"></script> -->
 
 </body>
 
