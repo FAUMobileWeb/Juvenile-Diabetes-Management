@@ -16,6 +16,9 @@ body {
 footer {
     margin: 50px 0;
 }
+#foodAuto{
+    width: 100%;
+}
 #title{
     font-style: italic;
 }
