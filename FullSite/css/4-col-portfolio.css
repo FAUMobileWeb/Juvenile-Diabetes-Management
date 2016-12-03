@@ -28,6 +28,19 @@ footer {
     background-color: gainsboro;
     border-radius: 10px;
 }
+#landingMain
+{
+    text-align: center;
+}
+#loginButton
+{
+    background-color:green;
+    color: white;
+}
+#loginButton:hover
+{
+    background-color: #185618;
+}
 .slider-selection {
 	background: #BABABA;
 }
@@ -100,7 +113,7 @@ footer {
 .tt-suggestion p {
   margin: 0;
 }
-#bloodhound .tt-dropdown-menu {
+#bloodhound .tt-menu {
   max-height: 150px;
   overflow-y: auto;
 }
