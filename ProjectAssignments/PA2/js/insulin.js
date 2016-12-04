@@ -5,7 +5,7 @@ $("#addButton").click(function () {
     } else {
         var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
         if (user === null) {
-            window.location.href = "/login.html";
+            window.location.href = "login.html";
         } else {
             var dos = slider2.slider('getValue');
             var shot = {
@@ -24,7 +24,7 @@ $("#addButton").click(function () {
 function UpdateTable() {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var dosages = user.insulin;
         $("#outputShot").html(" <tr><td>Date/Time</td><td>Dosage</td><td></td></tr>");
@@ -41,7 +41,7 @@ $(function () {
 $(document).on('click', '.deleteButton', function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var thisId = $(this).attr("id");
         console.log(thisId);

@@ -3,7 +3,7 @@ var ctx = document.getElementById("myChart");
 $("#cal").click(function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var label = [];
         var dataset = [];
@@ -35,7 +35,7 @@ $("#cal").click(function () {
 $("#sugar").click(function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var label = [];
         var dataset = [];
@@ -66,7 +66,7 @@ $("#sugar").click(function () {
 $("#insulin").click(function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var label = [];
         var dataset = [];
@@ -100,7 +100,7 @@ $("#exercise").click(function () {
 $("#weight").click(function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var label = [];
         var dataset = [];

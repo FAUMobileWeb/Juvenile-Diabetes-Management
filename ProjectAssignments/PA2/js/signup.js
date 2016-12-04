@@ -22,6 +22,6 @@ $("#loginButton").click(function () {
         sessionStorage.setItem("name", name);
         var getBackitem = JSON.parse(localStorage.getItem(name));
         console.log(getBackitem);
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
     }
 });

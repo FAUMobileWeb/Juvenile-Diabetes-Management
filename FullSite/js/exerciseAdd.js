@@ -6,7 +6,7 @@ $("#addButton").click(function () {
     } else {
         var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
         if (user === null) {
-            window.location.href = "/login.html";
+            window.location.href = "login.html";
         } else {
             if (dropdown == 1) {
                 var weight = slider2.slider('getValue');
@@ -42,7 +42,7 @@ $("#addButton").click(function () {
 function UpdateTable() {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var lift = user.exerciseWeight;
         $("#outputWeight").html(" <tr><td>Date/Time</td><td>Weight</td><td>Sets</td><td>Reps</td></tr>");
@@ -64,7 +64,7 @@ $(function () {
 $(document).on('click', '.deleteButton', function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var thisId = $(this).attr("id");
         console.log(thisId);
@@ -77,7 +77,7 @@ $(document).on('click', '.deleteButton', function () {
 $(document).on('click', '.deleteButtonRun', function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var thisId = $(this).attr("id");
         console.log(thisId);

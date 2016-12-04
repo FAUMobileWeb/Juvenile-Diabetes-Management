@@ -5,7 +5,7 @@ $("#addButton").click(function () {
     } else {
         var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
         if (user === null) {
-            window.location.href = "/login.html";
+            window.location.href = "login.html";
         } else {
             $.ajax({
                 url: 'https://trackapi.nutritionix.com/v2/search/item',
@@ -40,7 +40,7 @@ $("#addButton").click(function () {
 function UpdateTable() {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var meals = user.meal;
         $("#outputFood").html(" <tr><td>Date/Time</td><td>Food</td><td>Serving</td><td>Calories</td></tr> ha");
@@ -57,7 +57,7 @@ $(function () {
 $(document).on('click', '.deleteButton', function () {
     var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
     if (user === null) {
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     } else {
         var thisId = $(this).attr("id");
         console.log(thisId);

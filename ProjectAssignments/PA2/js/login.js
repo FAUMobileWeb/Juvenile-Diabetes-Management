@@ -12,7 +12,7 @@ $("#loginButton").click(function () {
         } else {
 
             sessionStorage.setItem("name", getBackitem.username);
-            window.location.href = "/index.html";
+            window.location.href = "index.html";
         }
     }
 });
