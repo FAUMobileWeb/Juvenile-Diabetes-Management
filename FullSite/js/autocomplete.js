@@ -53,20 +53,3 @@ $('#bloodhound .typeahead').typeahead({
 $('#bloodhound .typeahead').bind('typeahead:select', function (ev, suggestion) {
     $('#foodAutoId').val(suggestion.id);
 });
-$('#addButton').click(function () {
-    var itemStats;
-    $.ajax({
-        url: 'https://trackapi.nutritionix.com/v2/search/item',
-        headers: {
-            "x-app-id": "bd9705a5",
-            "x-app-key": '6e036410591cb7377ddd484c9b760797'
-        },
-        contentType: "application/json; charset=UTF-8",
-        data: {
-            nix_item_id: $('#foodAutoId').val()
-        },
-    }).done(function (results) {
-        itemStats = results;
-        console.log(itemStats);
-    });
-});

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>JDM</title>
+    <title>Graph</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <![endif]-->
     <!-- jQuery -->
     <script src="js/jquery-3.1.1.min.js"></script>
-
+    <script src="js/moment.min.js"></script>
 </head>
 
 <body>
@@ -60,17 +60,17 @@
 
     <!-- Page Content -->
     <div class="container" id="mainBody">
-        <h1 id="title">Add Data</h1>
+        <h1 id="title">Graph</h1>
+        <canvas id="myChart" width="200" height="200"></canvas>
+
         <div class="row">
-            <div class="col-md-4 col-md-offset-4 portfolio-item">
-                <div clas="list-group">
-                    <a href="Meal.html" class="list-group-item">Add Meal</a>
-                    <a href="BloodSugar.html" class="list-group-item">Add Blood Sugar Measurement</a>
-                    <a href="InsulinShot.html" class="list-group-item">Add Insulin Shot</a>
-                    <a href="Exercise.html" class="list-group-item">Add Exercise</a>
-                    <a href="Weight.html" class="list-group-item">Add Weight Measurement</a>
-                    <a href="BloodPressure.html" class="list-group-item">Add Blood Pressure Measurement</a>
-                </div>
+            <div class="btn-group" role="group">
+                <button id="cal" type="button" class="btn btn-default">Calories</button>
+                <button id="sugar" type="button" class="btn btn-default">Blood Sugar</button>
+                <button id="insulin" type="button" class="btn btn-default">Insulin</button>
+                <button id="exercise" type="button" class="btn btn-default">Exercise</button>
+                <button id="weight" type="button" class="btn btn-default">Weight</button>
+                <button id="pressure" type="button" class="btn btn-default">Blood Pressure</button>
             </div>
         </div>
 
@@ -95,16 +95,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
-            if (user === null) {
-                window.location.href = "/landing.html";
-            }
-        });
-    </script>
-
-
+    <script src="js/Chart.min.js"></script>
+    <script src="js/graphs.js"></script>
 </body>
 
 </html>
