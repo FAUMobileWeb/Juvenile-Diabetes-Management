@@ -22,7 +22,9 @@ $("#cal").click(function () {
                 labels: label,
                 datasets: [{
                         label: "Calories",
-                        data: dataset
+                        data: dataset,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)"
                     }
 
                     ]
@@ -54,7 +56,9 @@ $("#sugar").click(function () {
                 labels: label,
                 datasets: [{
                         label: "Blood Sugar",
-                        data: dataset
+                        data: dataset,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)"
                     }
 
                     ]
@@ -85,7 +89,9 @@ $("#insulin").click(function () {
                 labels: label,
                 datasets: [{
                         label: "Insulin",
-                        data: dataset
+                        data: dataset,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)"
                     }
 
                     ]
@@ -116,7 +122,9 @@ $("#exercise").click(function () {
                 labels: label,
                 datasets: [{
                         label: "Total Weight Lifted",
-                        data: dataset
+                        data: dataset,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)"
                     }
 
                     ]
@@ -147,7 +155,9 @@ $("#exerciseRun").click(function () {
                 labels: label,
                 datasets: [{
                         label: "Running in Minutes",
-                        data: dataset
+                        data: dataset,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)"
                     }
 
                     ]
@@ -178,7 +188,9 @@ $("#weight").click(function () {
                 labels: label,
                 datasets: [{
                         label: "Weight",
-                        data: dataset
+                        data: dataset,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)"
                     }
 
                     ]
@@ -187,5 +199,43 @@ $("#weight").click(function () {
     }
 });
 $("#pressure").click(function () {
+    var user = JSON.parse(localStorage.getItem(sessionStorage.getItem("name")));
+    if (user === null) {
+        window.location.href = "login.html";
+    } else {
+        var label = [];
+        var dataset = [];
+        var dataset2 = [];
+        var cals = user.bloodPressure;
+        var orderedCals = {};
+        Object.keys(cals).sort().forEach(function (key) {
+            orderedCals[key] = cals[key];
+        })
+        $.each(orderedCals, function (key, value) {
+            label.push(value.date);
+            dataset.push(value.systolic);
+            dataset2.push(value.diastolic);
+        });
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: label,
+                datasets: [{
+                        label: "Systolic",
+                        data: dataset,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)"
+                    },
+                    {
+                        label: "Diastolic",
+                        data: dataset2,
+                        backgroundColor: "rgba(255, 25, 25, 0.4)",
+                        borderColor: "rgba(255, 25, 25, 1)"
+                    }
 
+                    ]
+            }
+
+        });
+    }
 });
